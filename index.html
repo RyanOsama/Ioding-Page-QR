@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title id="meta-title">GateQR Manager | Smart Event Management & QR Entry</title>
+  <meta name="title" content="GateQR Manager | Smart Event Management & QR Entry">
+  <meta name="description" id="meta-desc" content="Manage events, QR invitations, guest lists, and secure event entry with GateQR Manager.">
+  <meta name="theme-color" content="#F97316">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GateQR Manager | Smart Event Management & QR Entry">
+  <meta property="og:description" content="Manage events, QR invitations, guest lists, and secure event entry with GateQR Manager.">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23F97316'><path d='M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h3v3h-3v-3zm0 5h3v3h-3v-3zm-5-5h3v3h-3v-3zm0 5h3v3h-3v-3z'/></svg>">
+
+  <!-- Main Stylesheet (Vanilla CSS, White & Orange palette) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="#hero" class="brand" aria-label="GateQR Manager Home">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm11-2h2v2h-2v-2zm0 4h2v2h-2v-2zm-3-4h2v2h-2v-2zm0 4h2v2h-2v-2zm6-4h2v6h-2v-2h-2v-2h2v-2z"/>
+            </svg>
+          </div>
+          <span class="brand-text" data-i18n="brandName">GateQR Manager</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link active" data-i18n="navHome">Home</a></li>
+          <li><a href="#features" class="nav-link" data-i18n="navFeatures">Features</a></li>
+          <li><a href="#apps" class="nav-link" data-i18n="navApplications">Applications</a></li>
+          <li><a href="#how-it-works" class="nav-link" data-i18n="navHowItWorks">How It Works</a></li>
+          <li><a href="#security" class="nav-link" data-i18n="navSecurity">Security</a></li>
+          <li><a href="#audience" class="nav-link" data-i18n="navAudience">Who It's For</a></li>
+          <li><a href="#faq" class="nav-link" data-i18n="navFaq">FAQ</a></li>
+        </ul>
+
+        <!-- Action Buttons -->
+        <div class="nav-actions">
+          <!-- Language Switcher -->
+          <button type="button" class="lang-btn" id="lang-switcher" aria-label="Change Language">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span id="lang-label" data-i18n="langToggle">العربية</span>
+          </button>
+
+          <!-- Download CTA -->
+          <a href="#download" class="btn btn-primary" data-i18n="navDownload">Download</a>
+
+          <!-- Mobile Toggle Button -->
+          <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Hero Left / Content -->
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span data-i18n="heroTitlePrefix">Smart Event Management.</span>
+            <span class="hero-title-accent" data-i18n="heroTitleAccent">Fast QR Entry.</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            Manage invitations, print QR cards, and verify guest entry in seconds &mdash; all from one powerful system.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-primary btn-lg" id="hero-download-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span data-i18n="heroDownloadCta">Download the System</span>
+            </a>
+            <a href="#" class="btn btn-secondary-saas btn-lg" id="hero-whatsapp-btn" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.02L7.55 18.84L4.44 19.66L5.27 16.63L5.07 16.31C4.27 15.04 3.81 13.5 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+              </svg>
+              <span data-i18n="heroContactCta">Contact Administration</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right / Real Application Dashboard Preview -->
+        <div class="hero-visual">
+          <div class="software-window">
+            
+            <!-- Window Titlebar -->
+            <div class="window-titlebar">
+              <div class="window-controls">
+                <span class="win-btn win-close"></span>
+                <span class="win-btn win-min"></span>
+                <span class="win-btn win-max"></span>
+              </div>
+              <div class="window-title" data-i18n="uiWindowTitle">GateQR Manager - Desktop Hub</div>
+            </div>
+
+            <!-- Real Application Dashboard Screenshot -->
+            <div class="window-screenshot-wrapper">
+              <img src="assets/dashboard-preview.png" alt="GateQR Manager Dashboard" class="software-screenshot-img" width="1024" height="614" loading="eager">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- ==========================================================================
+       Download & Account Notice Section
+       ========================================================================== -->
+  <section class="download-section" id="download">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="downloadSectionBadge">Direct Downloads</div>
+        <h2 class="section-title" data-i18n="downloadSectionTitle">Download GateQR Manager</h2>
+        <p class="section-subtitle" data-i18n="downloadSectionSubtitle">
+          Install the desktop hub on your PC and deploy scanners on Android phones in minutes.
+        </p>
+      </div>
+
+      <!-- Two Direct Download Cards -->
+      <div class="downloads-grid">
+        <!-- Windows Desktop App Card -->
+        <div class="download-card">
+          <div class="card-top">
+            <div class="card-header-flex">
+              <div class="card-icon-box">
+                <!-- Windows Icon -->
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-13.051-1.802"/>
+                </svg>
+              </div>
+              <span class="card-badge" data-i18n="desktopCardBadge">Management Hub</span>
+            </div>
+            <h3 class="card-title" data-i18n="desktopCardTitle">Download Windows App</h3>
+            <p class="card-desc" data-i18n="desktopCardDesc">
+              Comprehensive desktop control panel for event configuration, guest databases, and badge printing.
+            </p>
+            <ul class="card-features">
+              <li>
+                <span class="check-icon">✓</span>
+                <span data-i18n="desktopFeature1">Windows 10 / 11 (64-bit)</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span data-i18n="desktopFeature2">Bulk guest import & export (Excel / CSV)</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span data-i18n="desktopFeature3">High-speed badge & QR card printing</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span data-i18n="desktopFeature4">Multi-gate coordinator & live dashboard</span>
+              </li>
+            </ul>
+          </div>
+          <div class="download-cta-block">
+            <a href="#" class="btn btn-primary btn-lg" id="btn-download-windows">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span data-i18n="desktopBtn">Download Windows App</span>
+            </a>
+            <span class="card-meta-text" data-i18n="desktopMeta">Installer .exe • Latest stable release</span>
+          </div>
+        </div>
+
+        <!-- Android Gate Scanner Card -->
+        <div class="download-card">
+          <div class="card-top">
+            <div class="card-header-flex">
+              <div class="card-icon-box">
+                <!-- Android Icon -->
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.523 15.34c-.551 0-.999-.449-.999-1s.448-1 .999-1c.553 0 1 .449 1 1s-.447 1-1 1zm-11.046 0c-.551 0-.999-.449-.999-1s.448-1 .999-1c.553 0 1 .449 1 1s-.447 1-1 1zm11.405-6.02l1.997-3.46a.416.416 0 00-.152-.569.416.416 0 00-.568.152l-2.022 3.504c-1.579-.724-3.35-1.127-5.137-1.127s-3.558.403-5.137 1.127l-2.022-3.504a.416.416 0 00-.568-.152.416.416 0 00-.152.569l1.997 3.46C2.688 10.538 0 14.18 0 18.39h24c0-4.21-2.688-7.852-6.118-9.07z"/>
+                </svg>
+              </div>
+              <span class="card-badge" data-i18n="androidCardBadge">Gate Scanner</span>
+            </div>
+            <h3 class="card-title" data-i18n="androidCardTitle">Download Android App</h3>
+            <p class="card-desc" data-i18n="androidCardDesc">
+              Turn any Android smartphone into an ultra-fast, high-precision entrance verification terminal.
+            </p>
+            <ul class="card-features">
+              <li>
+                <span class="check-icon">✓</span>
+                <span data-i18n="androidFeature1">Android 8.0 or newer</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span data-i18n="androidFeature2">Sub-second camera QR barcode scanning</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span data-i18n="androidFeature3">Instant visual & audio duplicate alert</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span data-i18n="androidFeature4">Works on standard phone cameras</span>
+              </li>
+            </ul>
+          </div>
+          <div class="download-cta-block">
+            <a href="#" class="btn btn-primary btn-lg" id="btn-download-android">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span data-i18n="androidBtn">Download Android App</span>
+            </a>
+            <span class="card-meta-text" data-i18n="androidMeta">Package .apk • Fast direct download</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dedicated Important Account Notice Callout (Prompt section 7) -->
+      <div class="account-notice-wrapper">
+        <div class="account-notice-card">
+          <div class="notice-info">
+            <div class="notice-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M12 8v4"></path>
+                <path d="M12 16h.01"></path>
+              </svg>
+            </div>
+            <div class="notice-text">
+              <h3 data-i18n="accountNoticeTitle">Need an account?</h3>
+              <div class="notice-highlight" data-i18n="accountNoticeHighlight">
+                The application requires an active account to sign in.
+              </div>
+              <p>
+                <strong data-i18n="accountNoticeQuestion">Don't have an account yet?</strong> 
+                <span data-i18n="accountNoticeAction">Contact Administration</span> — 
+                <span data-i18n="accountNoticeDesc">Our team will create and provision your event account credentials instantly via WhatsApp.</span>
+              </p>
+            </div>
+          </div>
+          <div class="notice-cta">
+            <a href="#" class="btn btn-whatsapp btn-lg" id="account-whatsapp-btn" target="_blank" rel="noopener noreferrer">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.02L7.55 18.84L4.44 19.66L5.27 16.63L5.07 16.31C4.27 15.04 3.81 13.5 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+              </svg>
+              <span data-i18n="accountNoticeBtn">Contact us on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Core Features Section
+       ========================================================================== -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="featuresBadge">Engineered for Speed</div>
+        <h2 class="section-title" data-i18n="featuresTitle">Everything You Need to Manage Your Event</h2>
+        <p class="section-subtitle" data-i18n="featuresSubtitle">
+          Built specifically to eliminate entrance delays, prevent fraudulent passes, and streamline guest arrivals.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1: Guest Management -->
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="feature1Title">Guest Management</h3>
+          <p class="feature-desc" data-i18n="feature1Desc">
+            Import and manage guest lists quickly with custom fields, categories, and VIP tagging.
+          </p>
+        </div>
+
+        <!-- Feature 2: QR Invitations -->
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="feature2Title">QR Invitations</h3>
+          <p class="feature-desc" data-i18n="feature2Desc">
+            Generate unique QR codes for invitations and tickets ready for digital distribution or print.
+          </p>
+        </div>
+
+        <!-- Feature 3: Fast Gate Scanning -->
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 7 23 1 17 1"></polyline>
+              <polyline points="1 17 1 23 7 23"></polyline>
+              <polyline points="23 17 23 23 17 23"></polyline>
+              <polyline points="1 7 1 1 7 1"></polyline>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="feature3Title">Fast Gate Scanning</h3>
+          <p class="feature-desc" data-i18n="feature3Desc">
+            Scan guest QR codes quickly using Android devices with ultra-fast camera recognition.
+          </p>
+        </div>
+
+        <!-- Feature 4: Duplicate Entry Protection -->
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="feature4Title">Duplicate Entry Protection</h3>
+          <p class="feature-desc" data-i18n="feature4Desc">
+            Prevent the same invitation from being used more than once with immediate security alerts.
+          </p>
+        </div>
+
+        <!-- Feature 5: Live Attendance -->
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="feature5Title">Live Attendance</h3>
+          <p class="feature-desc" data-i18n="feature5Desc">
+            Know how many guests entered and how many remain with live real-time statistics.
+          </p>
+        </div>
+
+        <!-- Feature 6: Multi-Gate Support -->
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="feature6Title">Multi-Gate Support</h3>
+          <p class="feature-desc" data-i18n="feature6Desc">
+            Allow multiple scanners to work simultaneously across several gates without data conflicts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Desktop + Mobile Deep Dive Section (Prompt section 9)
+       ========================================================================== -->
+  <section class="apps-section" id="apps">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="appsBadge">Unified Ecosystem</div>
+        <h2 class="section-title" data-i18n="appsTitle">Two Powerful Applications. One Unified System.</h2>
+      </div>
+
+      <!-- Part 1: Desktop Control Hub -->
+      <div class="app-row">
+        <div class="app-info">
+          <h3 class="app-info-title" data-i18n="desktopSectionTitle">Powerful Desktop Control</h3>
+          <p class="app-info-desc" data-i18n="desktopSectionDesc">
+            Manage your event from your Windows computer with full visibility and effortless control.
+          </p>
+          <ul class="app-checklist">
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="desktopItem1">Guest list management & bulk categorization</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="desktopItem2">Event scheduling and gate allocation</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="desktopItem3">High-definition QR generation with branding</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="desktopItem4">Invitation & card batch printing</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="desktopItem5">Attendance statistics & exportable reports</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="desktopItem6">Gate and operator permissions management</span>
+            </li>
+          </ul>
+          <a href="#download" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-13.051-1.802"/>
+            </svg>
+            <span data-i18n="desktopSectionBtn">Download Windows App</span>
+          </a>
+        </div>
+
+        <div class="app-showcase-card">
+          <div class="desktop-ui-mockup">
+            <div class="desktop-ui-header">
+              <span>🖥️ GateQR Manager — Desktop Hub (v2.4)</span>
+              <span style="color: #34D399; font-weight: 700;">● Online</span>
+            </div>
+            <div class="desktop-ui-body">
+              <div class="mockup-sidebar-menu">
+                <div class="mockup-nav-item active">📋 Guest List</div>
+                <div class="mockup-nav-item">🖨️ QR Card Printer</div>
+                <div class="mockup-nav-item">🚪 Active Gates</div>
+                <div class="mockup-nav-item">📊 Reports</div>
+              </div>
+              <div class="mockup-table-preview">
+                <div class="table-row-sim" style="font-weight: 700; color: #94A3B8;">
+                  <span>Guest</span>
+                  <span>Category</span>
+                  <span>Status</span>
+                </div>
+                <div class="table-row-sim">
+                  <span>Dr. Saud Al-Otaibi</span>
+                  <span class="table-badge vip">VIP</span>
+                  <span class="table-badge in">Checked-In</span>
+                </div>
+                <div class="table-row-sim">
+                  <span>Laila Al-Ghamdi</span>
+                  <span class="table-badge vip">Speaker</span>
+                  <span class="table-badge in">Checked-In</span>
+                </div>
+                <div class="table-row-sim">
+                  <span>Tariq Al-Zahrani</span>
+                  <span class="table-badge">Standard</span>
+                  <span style="color: #94A3B8;">Expected</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part 2: Mobile Scanner Section -->
+      <div class="app-row reverse">
+        <div class="app-info">
+          <h3 class="app-info-title" data-i18n="mobileSectionTitle">Fast Mobile Gate Scanner</h3>
+          <p class="app-info-desc" data-i18n="mobileSectionDesc">
+            Turn Android phones into fast and reliable event scanners for your staff at every entry point.
+          </p>
+          <ul class="app-checklist">
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="mobileItem1">Fast camera scanning with autofocus</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="mobileItem2">Clear interface with large status banners</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="mobileItem3">Instant validation under 0.2 seconds</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="mobileItem4">Immediate duplicate entry detection</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="mobileItem5">Multiple devices operating synchronously</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span data-i18n="mobileItem6">Simple operation requiring zero staff training</span>
+            </li>
+          </ul>
+          <a href="#download" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.523 15.34c-.551 0-.999-.449-.999-1s.448-1 .999-1c.553 0 1 .449 1 1s-.447 1-1 1zm-11.046 0c-.551 0-.999-.449-.999-1s.448-1 .999-1c.553 0 1 .449 1 1s-.447 1-1 1zm11.405-6.02l1.997-3.46a.416.416 0 00-.152-.569.416.416 0 00-.568.152l-2.022 3.504c-1.579-.724-3.35-1.127-5.137-1.127s-3.558.403-5.137 1.127l-2.022-3.504a.416.416 0 00-.568-.152.416.416 0 00-.152.569l1.997 3.46C2.688 10.538 0 14.18 0 18.39h24c0-4.21-2.688-7.852-6.118-9.07z"/>
+            </svg>
+            <span data-i18n="mobileSectionBtn">Download Android App</span>
+          </a>
+        </div>
+
+        <div class="mobile-showcase-box">
+          <div class="mobile-phone-frame">
+            <div class="phone-inner">
+              <div style="display: flex; justify-content: space-between; font-size: 0.7rem; font-weight: 700; margin-bottom: 0.5rem;">
+                <span>Gate Scanner #03</span>
+                <span style="color: #34D399;">● Online</span>
+              </div>
+              <div class="phone-scanner-active">
+                <div class="scanner-crosshair">
+                  <div class="scan-pulse"></div>
+                  <!-- Mini QR inside crosshair -->
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="#F97316">
+                    <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h3v3h-3v-3zm0 5h3v3h-3v-3zm-5-5h3v3h-3v-3zm0 5h3v3h-3v-3z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="phone-quick-info">
+                ✓ VALID PASS • SEAT A-14
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       How It Works Section (Prompt section 10)
+       ========================================================================== -->
+  <section class="how-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="howBadge">Simple Workflow</div>
+        <h2 class="section-title" data-i18n="howTitle">How It Works</h2>
+        <p class="section-subtitle" data-i18n="howSubtitle">
+          A seamless end-to-end journey from invitation creation to final guest verification.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number" data-i18n="howStep1Number">01</div>
+          <h3 class="step-title" data-i18n="howStep1Title">Create Your Event</h3>
+          <p class="step-desc" data-i18n="howStep1Desc">
+            Set up your event and guest list on the Windows desktop application in a few clicks.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number" data-i18n="howStep2Number">02</div>
+          <h3 class="step-title" data-i18n="howStep2Title">Generate & Print QR Invitations</h3>
+          <p class="step-desc" data-i18n="howStep2Desc">
+            Create unique QR invitations and print cards or send them digitally to your attendees.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number" data-i18n="howStep3Number">03</div>
+          <h3 class="step-title" data-i18n="howStep3Title">Scan & Verify</h3>
+          <p class="step-desc" data-i18n="howStep3Desc">
+            Scan the QR code at the gate with Android scanners and instantly verify authorized entry.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Security Section (Prompt section 11)
+       ========================================================================== -->
+  <section class="security-section" id="security">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="securityBadge">Maximum Integrity</div>
+        <h2 class="section-title" data-i18n="securityTitle">Built for Secure Event Entry</h2>
+        <p class="section-subtitle" data-i18n="securitySubtitle">
+          Designed to provide ironclad door control and eliminate unauthorized access at all gates.
+        </p>
+      </div>
+
+      <div class="security-grid">
+        <!-- Pillar 1 -->
+        <div class="security-box">
+          <div class="security-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <div class="security-content">
+            <h4 data-i18n="securityItem1Title">Unique QR Invitations</h4>
+            <p data-i18n="securityItem1Desc">
+              Every guest receives a cryptographically unique code that cannot be guessed or forged.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="security-box">
+          <div class="security-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="M9 12l2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="security-content">
+            <h4 data-i18n="securityItem2Title">Duplicate-Use Protection</h4>
+            <p data-i18n="securityItem2Desc">
+              Once a code is scanned at any gate, it is locked instantly to prevent badge sharing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="security-box">
+          <div class="security-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <div class="security-content">
+            <h4 data-i18n="securityItem3Title">Real-Time Validation</h4>
+            <p data-i18n="securityItem3Desc">
+              Verification happens in milliseconds with clear visual green/red indicators and audible alerts.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="security-box">
+          <div class="security-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+            </svg>
+          </div>
+          <div class="security-content">
+            <h4 data-i18n="securityItem4Title">Multi-Device Synchronization</h4>
+            <p data-i18n="securityItem4Desc">
+              All gate devices communicate seamlessly so entry at Gate A is immediately reflected at Gate B.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Target Audience (Who Is It For?) (Prompt section 12)
+       ========================================================================== -->
+  <section class="audience-section" id="audience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="audienceBadge">Tailored For You</div>
+        <h2 class="section-title" data-i18n="audienceTitle">Who Is It For?</h2>
+        <p class="section-subtitle" data-i18n="audienceSubtitle">
+          Trusted by diverse organizations that demand reliable, fast, and structured attendee entry.
+        </p>
+      </div>
+
+      <div class="audience-grid">
+        <!-- Audience 1 -->
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="audience-title" data-i18n="audience1Title">Event & Exhibition Organizers</h3>
+          <p class="audience-desc" data-i18n="audience1Desc">
+            Manage large guest lists, multi-gate entries, VIP queues, and exhibition passes effortlessly.
+          </p>
+        </div>
+
+        <!-- Audience 2 -->
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <h3 class="audience-title" data-i18n="audience2Title">Wedding & Event Venues</h3>
+          <p class="audience-desc" data-i18n="audience2Desc">
+            Ensure privacy and seamless luxury hospitality with personalized QR guest invitation cards.
+          </p>
+        </div>
+
+        <!-- Audience 3 -->
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <h3 class="audience-title" data-i18n="audience3Title">Universities & Institutes</h3>
+          <p class="audience-desc" data-i18n="audience3Desc">
+            Control access to graduation ceremonies, academic conferences, and student symposiums.
+          </p>
+        </div>
+
+        <!-- Audience 4 -->
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3 class="audience-title" data-i18n="audience4Title">Companies & Organizations</h3>
+          <p class="audience-desc" data-i18n="audience4Desc">
+            Secure internal town halls, shareholder meetings, VIP seminars, and corporate celebrations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ Section (Prompt section 13)
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="faqBadge">Got Questions?</div>
+        <h2 class="section-title" data-i18n="faqTitle">Frequently Asked Questions</h2>
+        <p class="section-subtitle" data-i18n="faqSubtitle">
+          Find quick answers about downloading, device compatibility, and account access.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <!-- Item 1 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faqQ1">Does GateQR require an account?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faqA1">
+              Yes. The application requires an active account to sign in and activate your event. If you don't have an account yet, simply contact the administration via WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faqQ2">Can multiple phones scan at the same event?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faqA2">
+              Yes. Multiple Android devices can be connected and used across different gates simultaneously with instant synchronization.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faqQ3">Does it support Windows?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faqA3">
+              Yes. GateQR Manager includes a dedicated Windows desktop application for complete event setup, guest list management, and badge printing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faqQ4">Can I print QR invitations?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faqA4">
+              Yes. The desktop application supports high-quality QR invitation generation and direct printing on various card and paper templates.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faqQ5">How can I get an account?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faqA5">
+              Contact the administration through WhatsApp. Our support team will create your account and guide you through your event setup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Final CTA Section (Prompt section 14)
+       ========================================================================== -->
+  <section class="final-cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title" data-i18n="ctaTitle">Ready to simplify your event entrance?</h2>
+        <p class="cta-subtitle" data-i18n="ctaSubtitle">
+          Download GateQR Manager and start managing your event with speed, security, and confidence.
+        </p>
+        <div class="cta-btn-group">
+          <a href="#" class="btn btn-primary btn-lg" id="final-btn-windows">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-13.051-1.802"/>
+            </svg>
+            <span data-i18n="ctaWindowsBtn">Download Windows App</span>
+          </a>
+          <a href="#" class="btn btn-outline btn-lg" id="final-btn-android">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.523 15.34c-.551 0-.999-.449-.999-1s.448-1 .999-1c.553 0 1 .449 1 1s-.447 1-1 1zm-11.046 0c-.551 0-.999-.449-.999-1s.448-1 .999-1c.553 0 1 .449 1 1s-.447 1-1 1zm11.405-6.02l1.997-3.46a.416.416 0 00-.152-.569.416.416 0 00-.568.152l-2.022 3.504c-1.579-.724-3.35-1.127-5.137-1.127s-3.558.403-5.137 1.127l-2.022-3.504a.416.416 0 00-.568-.152.416.416 0 00-.152.569l1.997 3.46C2.688 10.538 0 14.18 0 18.39h24c0-4.21-2.688-7.852-6.118-9.07z"/>
+            </svg>
+            <span data-i18n="ctaAndroidBtn">Download Android App</span>
+          </a>
+          <a href="#" class="btn btn-whatsapp btn-lg" id="final-btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.02L7.55 18.84L4.44 19.66L5.27 16.63L5.07 16.31C4.27 15.04 3.81 13.5 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+            </svg>
+            <span data-i18n="ctaWhatsappBtn">Contact Administration</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer (Prompt section 15)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand & Bio -->
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm11-2h2v2h-2v-2zm0 4h2v2h-2v-2zm-3-4h2v2h-2v-2zm0 4h2v2h-2v-2zm6-4h2v6h-2v-2h-2v-2h2v-2z"/>
+              </svg>
+            </div>
+            <span class="brand-text" data-i18n="brandName">GateQR Manager</span>
+          </div>
+          <p data-i18n="footerBrandDesc">
+            Smart event management and QR entry system designed for speed, security, and effortless coordination.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h4 class="footer-title" data-i18n="footerNavTitle">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" data-i18n="navHome">Home</a></li>
+            <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+            <li><a href="#apps" data-i18n="navApplications">Applications</a></li>
+            <li><a href="#how-it-works" data-i18n="navHowItWorks">How It Works</a></li>
+            <li><a href="#download" data-i18n="navDownload">Download</a></li>
+            <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact & WhatsApp -->
+        <div class="footer-contact">
+          <h4 class="footer-title" data-i18n="footerContactTitle">Account & Support</h4>
+          <p data-i18n="footerContactText">
+            Need an account or technical assistance? Contact our team anytime:
+          </p>
+          <a href="#" class="btn btn-whatsapp" id="footer-whatsapp-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.02L7.55 18.84L4.44 19.66L5.27 16.63L5.07 16.31C4.27 15.04 3.81 13.5 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+            </svg>
+            <span data-i18n="accountNoticeBtn">Contact us on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footerRights">© 2026 GateQR Manager. All rights reserved.</span>
+        <span>Built with White & Orange Modern Aesthetics</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

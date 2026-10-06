@@ -1,0 +1,9 @@
+{
+  "name": "gateqr-landing-page",
+  "version": "1.0.0",
+  "description": "GateQR Manager Static Landing Page",
+  "scripts": {
+    "dev": "npx -y serve . -l 8080",
+    "start": "npx -y serve . -l 8080"
+  }
+}
