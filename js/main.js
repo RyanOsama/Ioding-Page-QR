@@ -1,4 +1,4 @@
-﻿/**
+/**
  * GateQR Manager - Interactive Logic
  * Handles language switching (EN/AR with RTL), dynamic config URL binding,
  * mobile drawer, FAQ accordion, and scroll observation.
@@ -73,6 +73,35 @@
     [heroWhatsappBtn, accountWhatsappBtn, finalWhatsappBtn, footerWhatsappBtn].forEach(btn => {
       if (btn) btn.href = waUrl;
     });
+  }
+
+  /**
+   * Automatically fetch latest release URLs from Supabase version.json
+   */
+  const CLOUD_VERSION_URL = 'https://klkihualayaxyhjxhqru.supabase.co/storage/v1/object/public/releases/version.json';
+
+  function syncLatestReleasesFromCloud() {
+    fetch(`${CLOUD_VERSION_URL}?t=${Date.now()}`)
+      .then(res => {
+        if (!res.ok) return null;
+        return res.json();
+      })
+      .then(data => {
+        if (!data) return;
+        // Update Windows download links
+        if (data.desktop && data.desktop.download_url) {
+          if (btnDownloadWindows) btnDownloadWindows.href = data.desktop.download_url;
+          if (finalBtnWindows) finalBtnWindows.href = data.desktop.download_url;
+        }
+        // Update Android download links
+        if (data.mobile && data.mobile.download_url) {
+          if (btnDownloadAndroid) btnDownloadAndroid.href = data.mobile.download_url;
+          if (finalBtnAndroid) finalBtnAndroid.href = data.mobile.download_url;
+        }
+      })
+      .catch(err => {
+        console.warn('Could not sync latest releases from cloud, using config.js defaults:', err);
+      });
   }
 
   /**
@@ -232,11 +261,13 @@
   document.addEventListener('DOMContentLoaded', function () {
     setLanguage(currentLang);
     applyConfigUrls(currentLang);
+    syncLatestReleasesFromCloud();
   });
 
   // Also run immediately in case DOM is already parsed
   setLanguage(currentLang);
   applyConfigUrls(currentLang);
+  syncLatestReleasesFromCloud();
 
 })();
 

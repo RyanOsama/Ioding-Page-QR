@@ -21,13 +21,13 @@ window.APP_CONFIG = {
 
   // Direct download URLs for software releases
   downloads: {
-    windows: "https://github.com/RyanOsama/QR-code/releases/download/v1.0.0/EventQRManager-v1.0.0.exe",
+    windows: "https://github.com/RyanOsama/QR-code/releases/download/v1.0.2/EventQRManager-Setup-v1.0.2.exe",
     android: "https://github.com/RyanOsama/QR-code/releases/download/v1.0.0/EventScanner.apk",
   },
 
   // Version numbers shown on download cards
   versions: {
-    windows: "v1.0.0",
+    windows: "v1.0.2",
     android: "v1.0.0",
   },
 
