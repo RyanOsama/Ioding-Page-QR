@@ -1,15 +1,15 @@
 /**
- * GateQR Manager - Localization Strings
+ * Munasabat - Localization Strings
  * High quality bilingual marketing copy for English and Arabic.
  */
 window.APP_TRANSLATIONS = {
   en: {
     // Meta & Document
-    docTitle: "GateQR Manager | Smart Event Management & QR Entry",
-    metaDescription: "Manage events, QR invitations, guest lists, and secure event entry with GateQR Manager.",
+    docTitle: "Munasabat | Smart Event Management & QR Entry",
+    metaDescription: "Manage events, QR invitations, guest lists, and secure event entry with Munasabat.",
     
     // Navbar
-    brandName: "GateQR Manager",
+    brandName: "Munasabat",
     navHome: "Home",
     navFeatures: "Features",
     navApplications: "Applications",
@@ -21,7 +21,7 @@ window.APP_TRANSLATIONS = {
     langToggle: "العربية",
 
     // Hero
-    heroBadge: "GateQR Manager v2.4 • Windows & Android System",
+    heroBadge: "Munasabat • Windows & Android System",
     heroTitlePrefix: "Smart Event Management.",
     heroTitleAccent: "Fast QR Entry.",
     heroSubtitle: "Manage invitations, print QR cards, and verify guest entry in seconds — all from one powerful system.",
@@ -31,7 +31,7 @@ window.APP_TRANSLATIONS = {
     specOffline: "Offline Local LAN",
     specAntiPassback: "Instant Duplicate Lock",
     specPlatforms: "Windows & Android",
-    uiWindowTitle: "GateQR Manager - Event Hub v2.4",
+    uiWindowTitle: "Munasabat - Event Hub",
     uiWindowStatus: "LAN Active • 3 Gates",
     uiEventStatus: "EVENT ACTIVE",
     uiEventName: "Tech Annual Summit 2026",
@@ -60,7 +60,7 @@ window.APP_TRANSLATIONS = {
 
     // Download & Account Section
     downloadSectionBadge: "Direct Downloads",
-    downloadSectionTitle: "Download GateQR Manager",
+    downloadSectionTitle: "Download Munasabat System",
     downloadSectionSubtitle: "Install the desktop hub on your PC and deploy scanners on Android phones in minutes.",
     
     // Desktop Card
@@ -188,12 +188,12 @@ window.APP_TRANSLATIONS = {
     faqBadge: "Got Questions?",
     faqTitle: "Frequently Asked Questions",
     faqSubtitle: "Find quick answers about downloading, device compatibility, and account access.",
-    faqQ1: "Does GateQR require an account?",
+    faqQ1: "Does Munasabat require an account?",
     faqA1: "Yes. The application requires an active account to sign in and activate your event. If you don't have an account yet, simply contact the administration via WhatsApp.",
     faqQ2: "Can multiple phones scan at the same event?",
     faqA2: "Yes. Multiple Android devices can be connected and used across different gates simultaneously with instant synchronization.",
     faqQ3: "Does it support Windows?",
-    faqA3: "Yes. GateQR Manager includes a dedicated Windows desktop application for complete event setup, guest list management, and badge printing.",
+    faqA3: "Yes. Munasabat includes a dedicated Windows desktop application for complete event setup, guest list management, and badge printing.",
     faqQ4: "Can I print QR invitations?",
     faqA4: "Yes. The desktop application supports high-quality QR invitation generation and direct printing on various card and paper templates.",
     faqQ5: "How can I get an account?",
@@ -201,7 +201,7 @@ window.APP_TRANSLATIONS = {
 
     // Final CTA
     ctaTitle: "Ready to simplify your event entrance?",
-    ctaSubtitle: "Download GateQR Manager and start managing your event with speed, security, and confidence.",
+    ctaSubtitle: "Download Munasabat and start managing your event with speed, security, and confidence.",
     ctaWindowsBtn: "Download Windows App",
     ctaAndroidBtn: "Download Android App",
     ctaWhatsappBtn: "Contact Administration",
@@ -211,16 +211,16 @@ window.APP_TRANSLATIONS = {
     footerNavTitle: "Quick Links",
     footerContactTitle: "Account & Support",
     footerContactText: "Need an account or technical assistance? Contact our team anytime:",
-    footerRights: "© 2026 GateQR Manager. All rights reserved.",
+    footerRights: "© 2026 Munasabat. All rights reserved.",
   },
 
   ar: {
     // Meta & Document
-    docTitle: "GateQR Manager | منظومة إدارة المناسبات والدخول عبر QR",
-    metaDescription: "أدر مناسباتك ودعوات QR وقوائم الضيوف والدخول الآمن بسهولة عبر GateQR Manager.",
+    docTitle: "مناسبات | Munasabat - منظومة إدارة الفعاليات والدخول عبر QR",
+    metaDescription: "أدر مناسباتك ودعوات QR وقوائم الضيوف والدخول الآمن بسهولة عبر منظومة مناسبات.",
     
     // Navbar
-    brandName: "بوابة QR",
+    brandName: "مناسبات",
     navHome: "الرئيسية",
     navFeatures: "المميزات",
     navApplications: "المنظومة",
@@ -232,17 +232,17 @@ window.APP_TRANSLATIONS = {
     langToggle: "English",
 
     // Hero
-    heroBadge: "بوابة QR إصدار 2.4 • منظومة ويندوز وأندرويد",
+    heroBadge: "منظومة مناسبات • نظام ويندوز وأندرويد متكامل",
     heroTitlePrefix: "إدارة ذكية للمناسبات.",
     heroTitleAccent: "ودخول سريع عبر QR.",
-    heroSubtitle: "أدر الدعوات، اطبع بطاقات QR، وتحقق من دخول الضيوف خلال ثوانٍ — كل ذلك من خلال منظومة واحدة متكاملة.",
+    heroSubtitle: "أدر الدعوات، اطبع بطاقات QR، وتحقق من دخول الضيوف خلال ثوانٍ — كل ذلك من خلال منظومة مناسبات المتكاملة.",
     heroDownloadCta: "تحميل المنظومة",
     heroContactCta: "تواصل مع الإدارة",
     heroTrustLine: "دعم ويندوز وأندرويد • شبكة محلية بدون إنترنت • منع فوري للتكرار",
     specOffline: "شبكة محلية بدون إنترنت",
     specAntiPassback: "منع فوري لتكرار الدخول",
     specPlatforms: "ويندوز وأندرويد",
-    uiWindowTitle: "بوابة QR - لوحة تحكم المناسبات v2.4",
+    uiWindowTitle: "مناسبات - لوحة تحكم الفعاليات",
     uiWindowStatus: "متصل بالشبكة • 3 بوابات",
     uiEventStatus: "الفعالية النشطة",
     uiEventName: "المؤتمر التقني السنوي 2026",
@@ -271,7 +271,7 @@ window.APP_TRANSLATIONS = {
 
     // Download & Account Section
     downloadSectionBadge: "روابط التحميل المباشرة",
-    downloadSectionTitle: "حمّل منظومة GateQR Manager",
+    downloadSectionTitle: "حمّل منظومة مناسبات | Munasabat",
     downloadSectionSubtitle: "ثبّت لوحة الإدارة على جهاز الكمبيوتر وانشر أجهزة المسح على هواتف الأندرويد في دقائق.",
     
     // Desktop Card
@@ -399,7 +399,7 @@ window.APP_TRANSLATIONS = {
     faqBadge: "إجابات شافية",
     faqTitle: "الأسئلة الشائعة",
     faqSubtitle: "كل ما تود معرفته حول تحميل النظام واستخدامه وتفعيل الحساب.",
-    faqQ1: "هل يتطلب GateQR حساباً؟",
+    faqQ1: "هل تتطلب منظومة مناسبات حساباً؟",
     faqA1: "نعم. يتطلب التطبيق حسابًا فعالًا لتسجيل الدخول والبدء في تنظيم الفعالية. إذا لم يكن لديك حساب، تواصل مع الإدارة عبر الواتساب لتجهيز حسابك فوراً.",
     faqQ2: "هل يمكن استخدام عدة أجهزة Android في المناسبة نفسها؟",
     faqA2: "نعم، يمكن استخدام عدة أجهزة Android في بوابات ومداخل مختلفة لنفس المناسبة مع تزامن فوري لكافة عمليات الدخول.",
@@ -412,16 +412,16 @@ window.APP_TRANSLATIONS = {
 
     // Final CTA
     ctaTitle: "جاهز لتنظيم دخول مناسبتك بشكل أفضل؟",
-    ctaSubtitle: "حمّل GateQR Manager وابدأ إدارة مناسبتك بسرعة وأمان وسهولة.",
+    ctaSubtitle: "حمّل منظومة مناسبات (Munasabat) وابدأ إدارة فعاليتك بسرعة وأمان وسهولة.",
     ctaWindowsBtn: "تحميل تطبيق الويندوز",
     ctaAndroidBtn: "تحميل تطبيق الأندرويد",
     ctaWhatsappBtn: "تواصل مع الإدارة",
 
     // Footer
-    footerBrandDesc: "منظومة متطورة لإدارة المناسبات والدخول الذكي عبر تقنية QR تجمع بين السرعة الفائقة والأمان المطلق.",
+    footerBrandDesc: "منظومة مناسبات لإدارة الفعاليات والدخول الذكي عبر تقنية QR تجمع بين السرعة الفائقة والأمان المطلق.",
     footerNavTitle: "روابط سريعة",
     footerContactTitle: "الحسابات والدعم",
     footerContactText: "تحتاج إلى حساب جديد أو لديك أي استفسار؟ تواصل مع إدارتنا مباشرة:",
-    footerRights: "© 2026 GateQR Manager. جميع الحقوق محفوظة.",
+    footerRights: "© 2026 مناسبات (Munasabat). جميع الحقوق محفوظة.",
   }
 };

@@ -1,5 +1,5 @@
 /**
- * GateQR Manager - Interactive Logic
+ * Munasabat - Interactive Logic
  * Handles language switching (EN/AR with RTL), dynamic config URL binding,
  * mobile drawer, FAQ accordion, and scroll observation.
  */
@@ -7,8 +7,8 @@
 (function () {
   'use strict';
 
-  // State
-  let currentLang = localStorage.getItem('gateqr_lang') || 'en';
+  // State (defaults to Arabic 'ar' for Munasabat, fallback to English if chosen)
+  let currentLang = localStorage.getItem('munasabat_lang') || localStorage.getItem('gateqr_lang') || 'ar';
 
   // DOM Elements
   const htmlEl = document.documentElement;
@@ -115,7 +115,7 @@
 
     const dict = window.APP_TRANSLATIONS[lang];
     currentLang = lang;
-    localStorage.setItem('gateqr_lang', lang);
+    localStorage.setItem('munasabat_lang', lang);
 
     // Direction & HTML Attributes
     if (lang === 'ar') {
